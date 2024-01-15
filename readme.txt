@@ -38,6 +38,12 @@ Or in separate steps
 	./changeAppSettings.sh
 	./build.sh
 
+MegaMod specific commands
+
+	git submodule update --init --recursive
+	./setupMegaMod.sh
+	./build.sh megamod
+
 Then edit file build.sh if needed to add NDK dir to your PATH, then launch it.
 It will compile a bunch of libs under project/libs/,
 create Android package file project/bin/MainActivity-debug.apk,
